@@ -81,16 +81,11 @@ function SectionHeading({
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--color-cream)] text-[var(--color-ink)]">
-      <section className="relative overflow-hidden px-6 pt-8 sm:px-8 lg:px-10">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute left-1/2 top-[-6rem] h-[22rem] w-[28rem] -translate-x-1/2 rounded-full bg-white/85 blur-3xl" />
-          <div className="absolute left-[8%] top-36 h-64 w-64 rounded-full bg-white/80 blur-3xl" />
-          <div className="absolute right-[8%] top-28 h-72 w-72 rounded-full bg-[#ebe7e0] blur-3xl" />
-          <div className="absolute left-1/2 top-40 h-56 w-[70%] -translate-x-1/2 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.78),transparent_70%)]" />
-        </div>
+    <main className="relative min-h-screen overflow-x-hidden bg-transparent text-[var(--color-ink)]">
+      <div className="site-background fixed inset-0 -z-10" />
 
-        <div className="relative mx-auto max-w-6xl">
+      <section className="px-6 pt-8 sm:px-8 lg:px-10">
+        <div className="mx-auto max-w-6xl">
           <header className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
