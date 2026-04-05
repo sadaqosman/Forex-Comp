@@ -148,13 +148,13 @@ export default function Home() {
                 rel="noreferrer"
                 className="inline-flex min-w-[220px] items-center justify-center rounded-full border border-[var(--color-line-strong)] bg-white/84 px-7 py-4 text-base font-medium text-[var(--color-ink)] shadow-[0_10px_24px_rgba(24,21,18,0.03)] transition hover:bg-white hover:shadow-[0_14px_28px_rgba(24,21,18,0.06)]"
               >
-                Register First
+                1. Register First
               </a>
               <a
                 href="#verification"
                 className="inline-flex min-w-[220px] items-center justify-center rounded-full border border-transparent px-7 py-4 text-base font-medium text-[var(--color-muted)] transition hover:text-[var(--color-ink)]"
               >
-                Verification Process
+                2. Verification Process
               </a>
             </div>
 

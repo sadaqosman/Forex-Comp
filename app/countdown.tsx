@@ -2,6 +2,8 @@
 
 import { useEffect, useRef, useState } from "react";
 
+const targetDate = new Date("2026-04-13T23:59:59+03:00").getTime();
+
 function getTimeLeft(targetTime: number) {
   const difference = targetTime - Date.now();
 
@@ -21,13 +23,10 @@ function getTimeLeft(targetTime: number) {
 }
 
 export default function Countdown() {
-  const targetTimeRef = useRef<number | null>(null);
-  const [timeLeft, setTimeLeft] = useState({ days: "10", hours: "00", minutes: "00" });
+  const targetTimeRef = useRef<number | null>(targetDate);
+  const [timeLeft, setTimeLeft] = useState({ days: "08", hours: "00", minutes: "00" });
 
   useEffect(() => {
-    targetTimeRef.current = Date.now() + 10 * 24 * 60 * 60 * 1000;
-    setTimeLeft(getTimeLeft(targetTimeRef.current));
-
     const interval = window.setInterval(() => {
       if (targetTimeRef.current) {
         setTimeLeft(getTimeLeft(targetTimeRef.current));
