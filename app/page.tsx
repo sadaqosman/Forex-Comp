@@ -58,14 +58,14 @@ const socials = [
 ];
 
 const backgroundMarks = [
-  { symbol: "📈", top: "12%", left: "10%", size: "text-3xl", rotate: "-rotate-12" },
-  { symbol: "$", top: "20%", left: "82%", size: "text-5xl", rotate: "rotate-6" },
-  { symbol: "💹", top: "36%", left: "18%", size: "text-3xl", rotate: "rotate-12" },
-  { symbol: "%", top: "42%", left: "86%", size: "text-4xl", rotate: "-rotate-6" },
-  { symbol: "🏆", top: "62%", left: "8%", size: "text-3xl", rotate: "-rotate-12" },
-  { symbol: "FX", top: "68%", left: "84%", size: "text-3xl", rotate: "rotate-6" },
-  { symbol: "📊", top: "82%", left: "18%", size: "text-4xl", rotate: "-rotate-6" },
-  { symbol: "$100", top: "78%", left: "74%", size: "text-2xl", rotate: "rotate-3" },
+  { symbol: "FX", top: "12%", left: "10%", size: "text-4xl", rotate: "-rotate-12" },
+  { symbol: "$100", top: "18%", left: "80%", size: "text-3xl", rotate: "rotate-6" },
+  { symbol: "LOTS", top: "34%", left: "14%", size: "text-3xl", rotate: "rotate-12" },
+  { symbol: "GROWTH", top: "44%", left: "82%", size: "text-3xl", rotate: "-rotate-6" },
+  { symbol: "WIN", top: "62%", left: "10%", size: "text-4xl", rotate: "-rotate-12" },
+  { symbol: "CAPITAL", top: "66%", left: "78%", size: "text-3xl", rotate: "rotate-6" },
+  { symbol: "TRADER", top: "82%", left: "18%", size: "text-3xl", rotate: "-rotate-6" },
+  { symbol: "25K-100K", top: "78%", left: "70%", size: "text-2xl", rotate: "rotate-3" },
 ];
 
 function SectionHeading({
@@ -98,7 +98,7 @@ export default function Home() {
         {backgroundMarks.map((mark) => (
           <span
             key={`${mark.symbol}-${mark.top}-${mark.left}`}
-            className={`absolute select-none font-semibold text-[rgba(23,20,17,0.08)] blur-[0.2px] ${mark.size} ${mark.rotate}`}
+            className={`absolute select-none font-semibold uppercase tracking-[0.18em] text-[rgba(23,20,17,0.065)] ${mark.size} ${mark.rotate}`}
             style={{ top: mark.top, left: mark.left }}
           >
             {mark.symbol}
