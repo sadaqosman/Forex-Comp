@@ -57,17 +57,6 @@ const socials = [
   { label: "Email", href: "mailto:info@tradersconnectkenya.com" },
 ];
 
-const backgroundMarks = [
-  { symbol: "FX", top: "12%", left: "10%", size: "text-4xl", rotate: "-rotate-12" },
-  { symbol: "$100", top: "18%", left: "80%", size: "text-3xl", rotate: "rotate-6" },
-  { symbol: "LOTS", top: "34%", left: "14%", size: "text-3xl", rotate: "rotate-12" },
-  { symbol: "GROWTH", top: "44%", left: "82%", size: "text-3xl", rotate: "-rotate-6" },
-  { symbol: "WIN", top: "62%", left: "10%", size: "text-4xl", rotate: "-rotate-12" },
-  { symbol: "CAPITAL", top: "66%", left: "78%", size: "text-3xl", rotate: "rotate-6" },
-  { symbol: "TRADER", top: "82%", left: "18%", size: "text-3xl", rotate: "-rotate-6" },
-  { symbol: "25K-100K", top: "78%", left: "70%", size: "text-2xl", rotate: "rotate-3" },
-];
-
 function SectionHeading({
   badge,
   title,
@@ -94,21 +83,10 @@ export default function Home() {
   return (
     <main className="relative isolate min-h-screen overflow-x-hidden bg-transparent text-[var(--color-ink)]">
       <div className="site-background fixed inset-0 z-0" />
-      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
-        {backgroundMarks.map((mark) => (
-          <span
-            key={`${mark.symbol}-${mark.top}-${mark.left}`}
-            className={`absolute select-none font-semibold uppercase tracking-[0.18em] text-[rgba(23,20,17,0.065)] ${mark.size} ${mark.rotate}`}
-            style={{ top: mark.top, left: mark.left }}
-          >
-            {mark.symbol}
-          </span>
-        ))}
-      </div>
 
       <div className="relative z-10">
-      <section className="px-6 pt-8 sm:px-8 lg:px-10">
-        <div className="mx-auto max-w-6xl">
+        <section className="px-6 pt-8 sm:px-8 lg:px-10">
+          <div className="mx-auto max-w-6xl">
           <header className="flex items-center justify-between">
             <div className="flex items-center gap-4">
               <Image
@@ -231,7 +209,7 @@ export default function Home() {
                           Competition Preview
                         </p>
                         <h3 className="mt-2 text-xl font-semibold tracking-[-0.03em] text-[#22201d] sm:text-2xl">
-                          Real Money. Real Discipline.
+                          Real Money. Real Discipline. 💼
                         </h3>
                       </div>
                       <div className="rounded-full border border-[var(--color-line-strong)] px-4 py-2 text-sm font-medium text-[#2a2826]">
@@ -252,7 +230,7 @@ export default function Home() {
                     </div>
 
                     <div className="mt-6 rounded-[22px] bg-[#181512] p-5 text-left text-white">
-                      <p className="text-sm font-medium text-white/70">Why Real Money Instead Of Demo?</p>
+                      <p className="text-sm font-medium text-white/70">Why Real Money Instead Of Demo? 🧠</p>
                       <p className="mt-3 text-sm leading-7 text-white/86 sm:text-base">
                         Real money reveals discipline under pressure.
                       </p>
@@ -260,7 +238,7 @@ export default function Home() {
 
                     <div className="mt-6 rounded-[22px] border border-[var(--color-line)] bg-[#fcfbf9] p-5 text-left">
                       <p className="text-sm font-medium text-[var(--color-ink)]">
-                        The official broker link lets us track valid accounts.
+                        The official broker link lets us track valid accounts. 🔗
                       </p>
                       <p className="mt-2 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
                         It confirms who entered correctly.
@@ -305,7 +283,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl text-center">
           <SectionHeading
             badge="Verification"
-            title="Manual approval"
+            title="Manual approval ✅"
             body="Submit proof. Approved traders receive the next steps and private Telegram access."
           />
 
@@ -377,7 +355,7 @@ export default function Home() {
                   Entry
                 </p>
                 <h3 className="mt-2 text-xl font-semibold tracking-[-0.02em] sm:text-2xl">
-                  Requirements
+                  Requirements 📋
                 </h3>
               </div>
               <ul className="mt-6 space-y-3">
@@ -397,7 +375,7 @@ export default function Home() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
                   Rules
                 </p>
-                <h3 className="mt-2 text-xl font-semibold tracking-[-0.02em] sm:text-2xl">Rules</h3>
+                <h3 className="mt-2 text-xl font-semibold tracking-[-0.02em] sm:text-2xl">Rules ⚖️</h3>
               </div>
               <ul className="mt-6 space-y-3">
                 {rules.map((item) => (
@@ -416,7 +394,7 @@ export default function Home() {
                 <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
                   Outcome
                 </p>
-                <h3 className="mt-2 text-xl font-semibold tracking-[-0.02em] sm:text-2xl">Rewards</h3>
+                <h3 className="mt-2 text-xl font-semibold tracking-[-0.02em] sm:text-2xl">Rewards 🏆</h3>
               </div>
               <ul className="mt-6 space-y-3">
                 {rewards.map((item) => (
