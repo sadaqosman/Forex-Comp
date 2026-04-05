@@ -136,7 +136,9 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-4xl text-sm font-medium leading-7 text-[#625c56] sm:text-base">
-              For skilled traders who need capital, structure, and a real path to scale.
+              Most traders today have the skill but not the capital that can truly change their lives. We
+              are here to help serious traders earn access to bigger capital and real opportunity. This is
+              more than a competition, we are building future millionaires.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
