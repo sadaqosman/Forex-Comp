@@ -57,6 +57,17 @@ const socials = [
   { label: "Email", href: "mailto:info@tradersconnectkenya.com" },
 ];
 
+const backgroundMarks = [
+  { symbol: "📈", top: "12%", left: "10%", size: "text-3xl", rotate: "-rotate-12" },
+  { symbol: "$", top: "20%", left: "82%", size: "text-5xl", rotate: "rotate-6" },
+  { symbol: "💹", top: "36%", left: "18%", size: "text-3xl", rotate: "rotate-12" },
+  { symbol: "%", top: "42%", left: "86%", size: "text-4xl", rotate: "-rotate-6" },
+  { symbol: "🏆", top: "62%", left: "8%", size: "text-3xl", rotate: "-rotate-12" },
+  { symbol: "FX", top: "68%", left: "84%", size: "text-3xl", rotate: "rotate-6" },
+  { symbol: "📊", top: "82%", left: "18%", size: "text-4xl", rotate: "-rotate-6" },
+  { symbol: "$100", top: "78%", left: "74%", size: "text-2xl", rotate: "rotate-3" },
+];
+
 function SectionHeading({
   badge,
   title,
@@ -83,6 +94,17 @@ export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden bg-transparent text-[var(--color-ink)]">
       <div className="site-background fixed inset-0 -z-10" />
+      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+        {backgroundMarks.map((mark) => (
+          <span
+            key={`${mark.symbol}-${mark.top}-${mark.left}`}
+            className={`absolute select-none font-semibold text-[rgba(23,20,17,0.08)] blur-[0.2px] ${mark.size} ${mark.rotate}`}
+            style={{ top: mark.top, left: mark.left }}
+          >
+            {mark.symbol}
+          </span>
+        ))}
+      </div>
 
       <section className="px-6 pt-8 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
