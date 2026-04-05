@@ -132,9 +132,9 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-4xl text-sm font-medium leading-7 text-[#625c56] sm:text-base">
-              Most traders today have the skill but not the capital that can truly change their lives. We
-              are here to help serious traders earn access to bigger capital and real opportunity. This is
-              more than a competition, we are building future millionaires.
+              Most traders have the skill—but not the capital to truly change their lives. We’re here to
+              change that by giving serious traders access to real funding and bigger opportunities. This is
+              more than a competition—it’s where future millionaires are made.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
