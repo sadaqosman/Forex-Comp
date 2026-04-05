@@ -92,9 +92,9 @@ function SectionHeading({
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen overflow-x-hidden bg-transparent text-[var(--color-ink)]">
-      <div className="site-background fixed inset-0 -z-10" />
-      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+    <main className="relative isolate min-h-screen overflow-x-hidden bg-transparent text-[var(--color-ink)]">
+      <div className="site-background fixed inset-0 z-0" />
+      <div className="pointer-events-none fixed inset-0 z-0 overflow-hidden">
         {backgroundMarks.map((mark) => (
           <span
             key={`${mark.symbol}-${mark.top}-${mark.left}`}
@@ -106,6 +106,7 @@ export default function Home() {
         ))}
       </div>
 
+      <div className="relative z-10">
       <section className="px-6 pt-8 sm:px-8 lg:px-10">
         <div className="mx-auto max-w-6xl">
           <header className="flex items-center justify-between">
@@ -514,6 +515,7 @@ export default function Home() {
           </div>
         </div>
       </footer>
+      </div>
     </main>
   );
 }
