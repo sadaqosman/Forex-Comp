@@ -146,7 +146,9 @@ export default function Home() {
                   1. Register First
                 </a>
                 <a
-                  href="#verification"
+                  href={verificationLink}
+                  target="_blank"
+                  rel="noreferrer"
                   className="inline-flex min-w-[220px] items-center justify-center rounded-full border border-[var(--color-line-strong)] bg-white px-7 py-4 text-base font-medium text-[var(--color-ink)] shadow-[0_10px_24px_rgba(24,21,18,0.02)] transition hover:bg-white hover:shadow-[0_14px_28px_rgba(24,21,18,0.05)]"
                 >
                   2. Verification Process
