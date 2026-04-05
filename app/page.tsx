@@ -9,15 +9,15 @@ const youtubeEmbed = "https://www.youtube.com/embed/7Gt2lK0SjUg";
 const steps = [
   {
     title: "Register Through The Official Link",
-    body: "Our partner link helps us track valid competition accounts.",
+    body: "Use the tracked partner link.",
   },
   {
     title: "Deposit At Least $100",
-    body: "Your $100 deposit is the real capital you use in the competition.",
+    body: "Fund the account you will trade.",
   },
   {
     title: "Submit Proof For Manual Approval",
-    body: "Submit proof for review. Approved traders join the private Telegram group.",
+    body: "Manual review unlocks access.",
   },
 ];
 
@@ -44,7 +44,7 @@ const rules = [
 
 const rewards = [
   "Sponsored prop firm challenge accounts from 25K to 100K",
-  "Support to help winners pass the challenge",
+  "Support through the challenge stage",
   "Cash bonuses for top-ranked traders",
   "Access to a private elite trading group",
   "Opportunity to work directly with the team",
@@ -136,9 +136,7 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mt-5 max-w-4xl text-sm font-medium leading-7 text-[#625c56] sm:text-base">
-              Most traders today have the skill but not the capital that can truly change their lives. We
-              are here to help serious traders earn access to bigger capital and real opportunity. This is
-              more than a competition, we are building future millionaires.
+              For skilled traders who need capital, structure, and a real path to scale.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -236,7 +234,7 @@ export default function Home() {
                     <div className="mt-6 rounded-[22px] bg-[#181512] p-5 text-left text-white">
                       <p className="text-sm font-medium text-white/70">Why Real Money Instead Of Demo?</p>
                       <p className="mt-3 text-sm leading-7 text-white/86 sm:text-base">
-                        Demo can hide weakness. Real money shows who can control fear, greed, and risk.
+                        Real money reveals discipline under pressure.
                       </p>
                     </div>
 
@@ -245,7 +243,7 @@ export default function Home() {
                         The official broker link lets us track valid accounts.
                       </p>
                       <p className="mt-2 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                        This helps Traders Connect Kenya confirm who is entering correctly.
+                        It confirms who entered correctly.
                       </p>
                     </div>
                   </div>
@@ -261,7 +259,7 @@ export default function Home() {
           <SectionHeading
             badge="Process"
             title="A simple 3-step process"
-            body="Keep it simple: register, deposit, submit proof."
+            body="Register. Deposit. Submit proof."
           />
 
           <div className="mt-14 grid gap-12 lg:grid-cols-3">
@@ -282,7 +280,7 @@ export default function Home() {
           <SectionHeading
             badge="Verification"
             title="Manual approval"
-            body="Submit proof of registration and deposit. Approved traders get the next steps and private Telegram access."
+            body="Submit proof. Approved traders receive the next steps and private Telegram access."
           />
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -291,7 +289,7 @@ export default function Home() {
                 What We Check
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                Partner-link registration and $100 deposit proof.
+                Registration proof and $100 deposit proof.
               </p>
             </div>
             <div className="rounded-[22px] border border-[var(--color-line)] bg-white/70 px-5 py-6 text-center">
@@ -299,7 +297,7 @@ export default function Home() {
                 Why Approval Is Manual
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                We want only real and eligible traders in the competition.
+                Only real and eligible traders are approved.
               </p>
             </div>
             <div className="rounded-[22px] border border-[var(--color-line)] bg-white/70 px-5 py-6 text-center">
@@ -307,14 +305,14 @@ export default function Home() {
                 After Approval
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                Approved traders receive the next steps and private Telegram access.
+                Approved traders move to the private Telegram group.
               </p>
             </div>
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl text-center">
             <p className="text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-              Open the form, submit your proof, and wait for review.
+              Open the form and submit your proof.
             </p>
 
             <div className="mt-6">
@@ -418,8 +416,7 @@ export default function Home() {
             This is not for beginners. It is for traders ready to scale.
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-base leading-7 text-[var(--color-muted)]">
-            If you understand the market and can trade with discipline, start with the official link,
-            complete the $100 deposit, and submit proof.
+            If you trade with discipline, start with the official link, complete the $100 deposit, and submit proof.
           </p>
           <a
             href={officialLink}
@@ -452,8 +449,7 @@ export default function Home() {
                 A new home for Kenyan forex traders.
               </h3>
               <p className="mt-4 max-w-xl text-base leading-8 text-[var(--color-muted)]">
-                A serious competition built to help disciplined traders learn, connect, grow, and access
-                bigger opportunities.
+                Built for disciplined traders ready for bigger opportunity.
               </p>
             </div>
 
