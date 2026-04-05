@@ -264,13 +264,19 @@ export default function Home() {
             body="Register. Deposit. Submit proof."
           />
 
-          <div className="mt-14 grid gap-12 lg:grid-cols-3">
-            {steps.map((step) => (
-              <article key={step.title} className="border-t border-[var(--color-line)] pt-5 text-center">
-                <h3 className="text-[1.35rem] font-medium leading-tight tracking-[-0.02em] text-[var(--color-ink)] sm:text-[1.5rem]">
+          <div className="mt-14 grid gap-5 lg:grid-cols-3">
+            {steps.map((step, index) => (
+              <article
+                key={step.title}
+                className="rounded-[24px] border border-[var(--color-line)] bg-white/70 px-6 py-7 text-center shadow-[0_10px_30px_rgba(24,21,18,0.03)]"
+              >
+                <div className="mx-auto flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line-strong)] text-sm font-semibold text-[var(--color-ink)]">
+                  0{index + 1}
+                </div>
+                <h3 className="mt-5 text-[1.2rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--color-ink)] sm:text-[1.35rem]">
                   {step.title}
                 </h3>
-                <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">{step.body}</p>
+                <p className="mt-3 text-sm leading-7 text-[var(--color-muted)]">{step.body}</p>
               </article>
             ))}
           </div>
