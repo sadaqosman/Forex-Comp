@@ -2,8 +2,7 @@ import Image from "next/image";
 import Countdown from "./countdown";
 
 const officialLink = "https://one.justmarkets.link/a/aeiee04pty";
-const verificationForm =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfI8wyHzpLQzrmVa5QX7svmU9deebmzY-oUy9sCXSSxGRcerQ/viewform";
+const verificationLink = "https://web.telegram.org/k/#@osman12345777";
 const youtubeEmbed = "https://www.youtube.com/embed/7Gt2lK0SjUg";
 
 const steps = [
@@ -17,7 +16,7 @@ const steps = [
   },
   {
     title: "Submit Proof For Manual Approval",
-    body: "Manual review unlocks access.",
+    body: "Send proof on Telegram for approval.",
   },
 ];
 
@@ -284,7 +283,7 @@ export default function Home() {
           <SectionHeading
             badge="Verification"
             title="Manual approval ✅"
-            body="Submit proof. Approved traders receive the next steps and private Telegram access."
+            body="Send your proof on Telegram. Approved traders receive the next steps and private Telegram access."
           />
 
           <div className="mt-10 grid gap-4 md:grid-cols-3">
@@ -293,7 +292,7 @@ export default function Home() {
                 What We Check
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                Registration proof and $100 deposit proof.
+                Screenshot proof of your deposit and the confirmation email sent by JustMarkets.
               </p>
             </div>
             <div className="rounded-[22px] border border-[var(--color-line)] bg-white/70 px-5 py-6 text-center">
@@ -301,7 +300,7 @@ export default function Home() {
                 Why Approval Is Manual
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                Only real and eligible traders are approved.
+                We manually confirm the deposit and account details before approval.
               </p>
             </div>
             <div className="rounded-[22px] border border-[var(--color-line)] bg-white/70 px-5 py-6 text-center">
@@ -309,35 +308,35 @@ export default function Home() {
                 After Approval
               </p>
               <p className="mt-4 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                Approved traders move to the private Telegram group.
+                Approved traders are moved to the private Telegram group.
               </p>
             </div>
           </div>
 
           <div className="mx-auto mt-10 max-w-2xl text-center">
             <p className="text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-              Open the form and submit your proof.
+              Send `@osman12345777` your deposit screenshot and the confirmation email sent by JustMarkets.
             </p>
 
             <div className="mt-6">
               <a
-                href={verificationForm}
+                href={verificationLink}
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center justify-center rounded-full border border-[var(--color-line-strong)] bg-white/84 px-8 py-4 text-base font-medium text-[var(--color-ink)] shadow-[0_10px_24px_rgba(24,21,18,0.03)] transition hover:bg-white hover:shadow-[0_14px_28px_rgba(24,21,18,0.06)]"
               >
-                Open Verification Form
+                Send Proof On Telegram
               </a>
             </div>
 
             <div className="mt-5">
               <a
-                href={verificationForm}
+                href={verificationLink}
                 target="_blank"
                 rel="noreferrer"
                 className="text-sm font-medium text-[var(--color-muted)] underline decoration-[var(--color-line-strong)] underline-offset-4"
               >
-                Open in a new tab
+                Open Telegram in a new tab
               </a>
             </div>
           </div>
