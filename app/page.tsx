@@ -171,83 +171,104 @@ export default function Home() {
               </div>
 
               <div className="mx-auto mt-12 max-w-5xl">
-                <div className="overflow-hidden rounded-[26px] border border-[var(--color-line)] bg-white p-3 shadow-[0_38px_100px_rgba(24,21,18,0.08)]">
-                  <div className="grid min-h-[440px] overflow-hidden rounded-[22px] border border-[var(--color-line)] bg-[#fbfaf8] md:grid-cols-[84px_240px_1fr]">
-                    <div className="flex flex-row justify-center gap-3 border-b border-[var(--color-line)] bg-[#f1ede7] p-4 md:flex-col md:justify-start md:border-b-0 md:border-r">
-                      <div className="h-11 w-11 rounded-2xl bg-[#181512]" />
-                      <div className="h-11 w-11 rounded-2xl border border-[var(--color-line)] bg-white" />
-                      <div className="h-11 w-11 rounded-2xl border border-[var(--color-line)] bg-white" />
-                      <div className="h-11 w-11 rounded-2xl border border-[var(--color-line)] bg-white" />
-                    </div>
-
-                    <div className="border-b border-[var(--color-line)] bg-[#f7f4f0] p-5 md:border-b-0 md:border-r">
-                      <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
-                        Competition Flow
-                      </p>
-                      <div className="mt-5 space-y-3">
-                        {steps.map((step, index) => (
-                          <div
-                            key={step.title}
-                            className={`rounded-2xl border px-4 py-4 text-left ${
-                              index === 1
-                                ? "border-[#181512] bg-[#181512] text-white shadow-[0_18px_40px_rgba(24,21,18,0.14)]"
-                                : "border-[var(--color-line)] bg-white text-[var(--color-muted)] shadow-[0_6px_18px_rgba(24,21,18,0.03)]"
-                            }`}
-                          >
-                            <p className="text-xs font-semibold uppercase tracking-[0.22em] opacity-70">
-                              Step {index + 1}
-                            </p>
-                            <p className="mt-2 text-xs font-medium leading-5 sm:text-sm">{step.title}</p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
-
-                    <div className="bg-white p-5 sm:p-7">
-                      <div className="flex flex-col gap-4 border-b border-[var(--color-line)] pb-5 sm:flex-row sm:items-center sm:justify-between">
-                        <div className="text-left">
-                          <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
-                            Competition Preview
+                <section className="overflow-hidden rounded-[30px] border border-[var(--color-line)] bg-[#fcfbf8] shadow-[0_34px_90px_rgba(24,21,18,0.07)]">
+                  <div className="grid lg:grid-cols-[0.95fr_1.35fr]">
+                    <div className="border-b border-[var(--color-line)] bg-[#f7f3ee] p-6 text-left sm:p-8 lg:border-b-0 lg:border-r">
+                      <div className="flex items-center justify-between gap-4">
+                        <div>
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
+                            Competition Flow
                           </p>
-                          <h3 className="mt-2 text-xl font-semibold tracking-[-0.03em] text-[#22201d] sm:text-2xl">
-                            Real Money. Real Discipline.
+                          <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
+                            Three simple steps
                           </h3>
                         </div>
-                        <div className="rounded-full border border-[var(--color-line-strong)] px-4 py-2 text-sm font-medium text-[#2a2826]">
+                        <div className="rounded-full border border-[var(--color-line-strong)] bg-white px-4 py-2 text-sm font-medium text-[var(--color-ink)]">
                           8 days left
                         </div>
                       </div>
 
-                      <div className="mt-6 grid gap-4 sm:grid-cols-3">
+                      <div className="mt-8 space-y-4">
+                        {steps.map((step, index) => (
+                          <div
+                            key={step.title}
+                            className="rounded-[22px] border border-[var(--color-line)] bg-white px-5 py-5 shadow-[0_8px_22px_rgba(24,21,18,0.03)]"
+                          >
+                            <div className="flex items-start gap-4">
+                              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-line-strong)] text-sm font-semibold text-[var(--color-ink)]">
+                                0{index + 1}
+                              </div>
+                              <div>
+                                <p className="text-base font-semibold tracking-[-0.02em] text-[var(--color-ink)]">
+                                  {step.title}
+                                </p>
+                                <p className="mt-2 text-sm leading-6 text-[var(--color-muted)]">{step.body}</p>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+
+                    <div className="bg-white p-6 text-left sm:p-8">
+                      <div className="max-w-2xl">
+                        <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
+                          Competition Preview
+                        </p>
+                        <h3 className="mt-3 text-3xl font-semibold tracking-[-0.04em] text-[var(--color-ink)] sm:text-[2.1rem]">
+                          Real Money. Real Discipline.
+                        </h3>
+                        <p className="mt-3 max-w-xl text-sm leading-7 text-[var(--color-muted)] sm:text-base">
+                          This competition is built to find traders who can perform with composure, discipline,
+                          and consistency under real pressure.
+                        </p>
+                      </div>
+
+                      <div className="mt-8 grid gap-4 sm:grid-cols-3">
                         {highlights.map((item) => (
                           <div
                             key={item.label}
-                            className="rounded-2xl border border-[var(--color-line)] bg-[#f7f4f0] p-4 text-left"
+                            className="rounded-[22px] border border-[var(--color-line)] bg-[#fcfbf9] px-5 py-5"
                           >
-                            <p className="text-xs text-[var(--color-muted)] sm:text-sm">{item.label}</p>
-                            <p className="mt-3 text-xl font-semibold text-[#22201d] sm:text-2xl">{item.value}</p>
+                            <p className="text-[11px] font-medium uppercase tracking-[0.18em] text-[var(--color-muted)]">
+                              {item.label}
+                            </p>
+                            <p className="mt-4 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
+                              {item.value}
+                            </p>
                           </div>
                         ))}
                       </div>
 
-                      <div className="mt-6 rounded-[22px] bg-[#181512] p-5 text-left text-white">
-                        <p className="text-sm font-medium text-white/70">Why Real Money Instead Of Demo?</p>
-                        <p className="mt-3 text-sm leading-7 text-white/86 sm:text-base">
-                          Real money reveals discipline under pressure.
-                        </p>
-                      </div>
+                      <div className="mt-8 grid gap-4 lg:grid-cols-2">
+                        <div className="rounded-[24px] bg-[#181512] px-6 py-6 text-white shadow-[0_18px_40px_rgba(24,21,18,0.16)]">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/62">
+                            Why Real Money?
+                          </p>
+                          <p className="mt-3 text-lg font-semibold tracking-[-0.02em] text-white">
+                            No demo psychology.
+                          </p>
+                          <p className="mt-3 text-sm leading-7 text-white/82 sm:text-base">
+                            Real money reveals discipline under pressure and shows who can truly manage emotions.
+                          </p>
+                        </div>
 
-                      <div className="mt-6 rounded-[22px] border border-[var(--color-line)] bg-[#fcfbf9] p-5 text-left">
-                        <p className="text-sm font-medium text-[var(--color-ink)]">
-                          The official broker link lets us track valid accounts.
-                        </p>
-                        <p className="mt-2 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                          It confirms who entered correctly.
-                        </p>
+                        <div className="rounded-[24px] border border-[var(--color-line)] bg-[#f8f5f1] px-6 py-6">
+                          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
+                            Why The Official Link?
+                          </p>
+                          <p className="mt-3 text-lg font-semibold tracking-[-0.02em] text-[var(--color-ink)]">
+                            It keeps the competition clean.
+                          </p>
+                          <p className="mt-3 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
+                            The official broker link lets us track valid accounts and confirm who entered
+                            correctly.
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               </div>
             </div>
           </div>
