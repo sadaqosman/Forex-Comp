@@ -173,7 +173,7 @@ export default function Home() {
               <div className="mx-auto mt-12 max-w-5xl">
                 <section className="overflow-hidden rounded-[32px] border border-[var(--color-line)] bg-white shadow-[0_36px_90px_rgba(24,21,18,0.06)]">
                   <div className="grid gap-0 lg:grid-cols-[0.88fr_1.12fr]">
-                    <div className="border-b border-[var(--color-line)] bg-[#faf7f2] p-6 sm:p-8 lg:border-b-0 lg:border-r">
+                    <div className="border-b border-[var(--color-line)] bg-white p-6 sm:p-8 lg:border-b-0 lg:border-r">
                       <div className="flex items-center justify-between gap-4">
                         <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
                           Competition Flow
@@ -234,25 +234,13 @@ export default function Home() {
                         ))}
                       </div>
 
-                      <div className="mt-6 grid gap-4 xl:grid-cols-2">
+                      <div className="mt-6">
                         <article className="rounded-[24px] border border-[#221f1b] bg-[#181512] px-6 py-6 text-white shadow-[0_18px_42px_rgba(24,21,18,0.15)]">
                           <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-white/62">
                             Why Real Money Instead Of Demo?
                           </p>
                           <p className="mt-4 text-sm leading-7 text-white/84 sm:text-base">
                             Real money reveals discipline under pressure.
-                          </p>
-                        </article>
-
-                        <article className="rounded-[24px] border border-[var(--color-line)] bg-[#f7f4ef] px-6 py-6">
-                          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
-                            Verified Entry
-                          </p>
-                          <p className="mt-4 text-sm leading-7 text-[var(--color-ink)] sm:text-base">
-                            The official broker link lets us track valid accounts.
-                          </p>
-                          <p className="mt-2 text-sm leading-7 text-[var(--color-muted)] sm:text-base">
-                            It confirms who entered correctly.
                           </p>
                         </article>
                       </div>
