@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Countdown from "./countdown";
+import DaysLeftBadge from "./days-left-badge";
 
 const officialLink = "https://direct-fxpro.com/en/partner/33XPaH4rP";
 const verificationLink = "https://t.me/Sadaqfx";
@@ -127,7 +128,7 @@ export default function Home() {
               <h1 className="mx-auto mt-8 max-w-5xl text-3xl font-semibold leading-[0.95] tracking-[-0.05em] text-[#292623] sm:text-4xl lg:text-5xl">
                 Prove Yourself.
                 <br />
-                Get Funded With Real Capital
+                Get Funded With Big Capital
               </h1>
 
               <p className="mx-auto mt-5 max-w-4xl text-sm font-medium leading-7 text-[#625c56] sm:text-base">
@@ -178,9 +179,7 @@ export default function Home() {
                         <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-[var(--color-accent)]">
                           Competition Flow
                         </p>
-                        <div className="rounded-full border border-[var(--color-line-strong)] bg-white px-4 py-2 text-sm font-medium text-[var(--color-ink)]">
-                          8 days left
-                        </div>
+                        <DaysLeftBadge />
                       </div>
 
                       <div className="relative mt-8 space-y-4">
