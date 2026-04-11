@@ -280,7 +280,9 @@ export default function Home() {
 
         <section className="px-6 py-16 sm:px-8 sm:py-20 lg:px-10">
           <div className="mx-auto max-w-5xl text-center">
-            <SectionHeading badge="Competition Details" title="What matters before you apply" />
+            <h2 className="font-display text-3xl leading-tight tracking-[-0.03em] text-[var(--color-ink)] sm:text-4xl">
+              Rewards, Requirements, Rules
+            </h2>
 
             <div className="mt-14 grid gap-12 lg:grid-cols-3">
               <section className="rounded-[24px] border border-[var(--color-line)] bg-white px-6 py-7">
