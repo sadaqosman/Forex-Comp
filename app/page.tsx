@@ -369,6 +369,56 @@ export default function Home() {
 
         <footer className="px-6 pb-12 sm:px-8 lg:px-10">
           <div className="mx-auto max-w-6xl border-t border-[var(--color-line)] pt-8">
+            <div className="mb-10 rounded-[28px] border border-[var(--color-line)] bg-[#fcfbf9] px-6 py-7 sm:px-8">
+              <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
+                <div className="max-w-2xl text-center lg:text-left">
+                  <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-[var(--color-accent)]">
+                    Sponsors
+                  </p>
+                  <h3 className="mt-3 text-2xl font-semibold tracking-[-0.03em] text-[var(--color-ink)]">
+                    Backed by brands supporting this competition.
+                  </h3>
+                </div>
+
+                <div className="grid gap-4 sm:grid-cols-2">
+                  <a
+                    href={officialLink}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-[24px] border border-[var(--color-line)] bg-white px-6 py-6 text-center transition hover:shadow-[0_14px_34px_rgba(24,21,18,0.06)]"
+                  >
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
+                      Main Sponsor
+                    </p>
+                    <div className="mt-5 flex h-[86px] items-center justify-center">
+                      <Image
+                        src="/fxpro-logo.png"
+                        alt="FxPro logo"
+                        width={180}
+                        height={72}
+                        className="h-auto max-h-[72px] w-auto max-w-[180px] object-contain"
+                      />
+                    </div>
+                  </a>
+
+                  <div className="rounded-[24px] border border-[var(--color-line)] bg-white px-6 py-6 text-center">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-[var(--color-accent)]">
+                      Gold Sponsor
+                    </p>
+                    <div className="mt-5 flex h-[86px] items-center justify-center">
+                      <Image
+                        src="/ab-trading-academy.jpeg"
+                        alt="AB Trading Academy logo"
+                        width={180}
+                        height={86}
+                        className="h-auto max-h-[86px] w-auto max-w-[180px] rounded-xl object-contain"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div className="grid gap-10 text-center lg:grid-cols-[1.3fr_1fr] lg:text-left">
               <div>
                 <div className="mb-4 flex justify-center lg:justify-start">
