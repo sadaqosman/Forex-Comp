@@ -3,7 +3,7 @@ import Countdown from "./countdown";
 
 const officialLink = "https://one.justmarkets.link/a/aeiee04pty";
 const verificationLink = "https://t.me/Sadaqfx";
-const youtubeEmbed = "https://www.youtube.com/embed/7Gt2lK0SjUg";
+const youtubeEmbed = "https://www.youtube.com/embed/YHLR9GVogvs";
 
 const steps = [
   {
